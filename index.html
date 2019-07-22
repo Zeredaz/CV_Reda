@@ -46,7 +46,7 @@
                     <div class="col-sm-12 ">
                             <h1><strong>BOURAKKADI</strong> REDA</h1>
                             <img src="images/puggy_pug.jpg" class="img-fluid profil-pic " alt="It's me"  />          
-                            <h2>Looking for a <strong>6 months</strong> internship in the IT sector</h2>   
+                            <h2>Looking for a <strong>6 months</strong> internship in the IT sector starting <strong>02/2019</strong></h2>   
                             <h4>You can contact me on my :</h4> 
                             <a href="https://fr.linkedin.com/in/reda-bourakkadi-60133216a/en">
                             <img src="images/LI-Logo.png" alt="linkedIn" style="height: 80px;"></a>         
@@ -167,11 +167,15 @@
 
 function changeMode(){
     let body = $('body'); 
+    let mode = $("#mode");
 
     if(!body.hasClass('Dark')){
         body.addClass('Dark');
+        mode.html("Light mode");
     }
-    else
+    else{
         body.removeClass('Dark');
+        mode.html('Dark mode');
+    }
 }
 </script>
