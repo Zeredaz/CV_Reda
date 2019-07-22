@@ -11,7 +11,7 @@
     <script src="js/bootstrap.min.js"></script>
 </head>
 
-<body>
+<body >
     <nav class="navbar navbar-inverse navbar-fixed-top" id="topNavBar">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -28,15 +28,19 @@
                     <li><a href="#Education">Education</a></li>
                     <li><a href="#Languages">Languages</a></li>
                     <li><a href="#ProExp">Professional experience</a></li>
+                    <li><a id="mode" onclick="changeMode();"> Dark mode </a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="container-fluid text-center">
+       
         <div class="row content" id='home'>
             <div class="col-sm-2 sidenav">
+                    
             </div>
             <div class="col-sm-8 text-center">
+                    
                 <div class="row">
 
                     <div class="col-sm-12 ">
@@ -123,7 +127,7 @@
                         <h1>Professional experience</h1>
                         <div class="col-sm-12">                
                         <div class="row experience">
-                                <h3 class="">4 months internship at Capgemini</h3>
+                                <h3>4 months internship at Capgemini</h3>
                                 <div class="col-sm-9 text-left">
                                     <ul>
                                         <li>Migrating a <strong> PHP HTML/CSS PostgreSQL</strong> web application</li>
@@ -156,8 +160,18 @@
 
 </html>
 
-<!-- 
+
 <script>
 // new Date().getFullYear();
 // document.getElementById('Age').innerHTML = new Date().getFullYear() - 1996;
-</script> -->
+
+function changeMode(){
+    let body = $('body'); 
+
+    if(!body.hasClass('Dark')){
+        body.addClass('Dark');
+    }
+    else
+        body.removeClass('Dark');
+}
+</script>

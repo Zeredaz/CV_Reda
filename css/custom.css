@@ -2,14 +2,28 @@
     color: rgb(75, 75, 75);
 } */
 
-body { padding-top: 70px; }
+body { 
+  padding-top: 70px;
+}
 
 h1,h2,h3{
   color: rgb(92, 91, 91);
 }
 
+
 strong{
   color:  #067790;
+}
+
+.Dark {
+  background-color: #152634;
+  color: white;
+}
+
+.Dark h1,
+.Dark h2,
+.Dark h3{
+  color: white;
 }
 
 th {
@@ -81,6 +95,10 @@ img{
     width: 100%;
     height: 100%; 
     /* margin: 0 auto; */
+}
+
+.Dark .profil-pic{
+  border-color: white;
 }
 
 .experience{
